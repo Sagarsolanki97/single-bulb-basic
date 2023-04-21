@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div class="cintainer">
+        <img  id="Off" onclick="clicked()"style="display: none;" src="pic_bulboff.gif" alt="">
+        <img id="On" onclick="clicked()" style="display: none;"src="pic_bulbon.gif" alt="">
+      </div>
+      <button id="btn" onclick="clicked()">click</button>
+      <script>
+        var btn = document.getElementById("btn");
+        var off = document.getElementById("Off");
+        var on = document.getElementById("On");
+
+        var clicked = ()=>{
+            if(on.style.display == "none"){
+            on.style.display = "block";
+            off.style.display="none";  
+    }else{
+        off.style.display = "block";
+        on.style.display = "none";
+    }
+        };
+
+   
+      </script>
+</body>
+</html>
